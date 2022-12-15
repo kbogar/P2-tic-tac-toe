@@ -27,7 +27,7 @@ const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 gameStatusDisplay.innerHTML = currentPlayerTurn();
 
 // set winning conditions
-const winConditions = [
+const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -51,8 +51,44 @@ function playerChange() {
 
 }
 
+/**
+ * we need to loop through winning conditions and check if the game state array under 
+ * those indexes match. If they match we move on to declare a winning player 
+ * and ending the game. We need also to check if the game ended in draw.
+ */
 function resultValidation() {
 
+    let roundWon = false;
+    for (let i = 0; i <= 9; i++) {
+        const winConditions = winningConditions[i];
+        let a = gameState[winConditions[0]];
+        let b = gameState[winConditions[1]];
+        let c = gameState[winConditions[2]];
+
+        if (a === '' || b === '' || c === '') {
+            continue;
+        }
+
+        if (a === b && b === c) {
+            roundWon = true;
+            break
+        }
+    }
+
+    if (roundWon) {
+        gameStatusDisplay.innerHTML = winMessage();
+        gameActive = false;
+        return;
+    }
+    // need to check are there any values in game state array that are still not populated
+    let roundDraw = !gameState.includes("");
+    if (roundDraw) {
+        gameStatusDisplay.innerHTML = drawMessage();
+        gameActive = false
+        return;
+    }
+    // if there are still moves to be played, we continue by changing the current player
+    playerChange();
 }
 
 /**
