@@ -25,3 +25,24 @@ const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 // Set initial message to let the players know whose turn it is
 gameStatusDisplay.innerHTML = currentPlayerTurn();
+
+// Set up the structure of game functions
+function cellPlayed() {
+
+}
+
+function playerChange() {
+
+}
+
+function resultValidation() {
+
+}
+
+function cellClick() {
+
+}
+
+function restartGame() {
+    
+}
