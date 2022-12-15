@@ -47,8 +47,11 @@ function cellPlayed(clickedCell, clickedCellIndex) {
     clickedCell.innerHTML = currentPlayer;
 }
 
+// change the current player and update the game status message
 function playerChange() {
 
+    currentPlayer = currentPlayer === "x" ? "o" : "x";
+    gameStatusDisplay.innerHTML = currentPlayerTurn();
 }
 
 /**
