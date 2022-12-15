@@ -22,4 +22,6 @@ let gameState = ["", "", "", "", "", "", "", "", ""];
 const winMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `It is a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
- 
+
+// Set initial message to let the players know whose turn it is
+gameStatusDisplay.innerHTML = currentPlayerTurn();
