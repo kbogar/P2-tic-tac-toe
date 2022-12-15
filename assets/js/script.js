@@ -113,8 +113,14 @@ function cellClick(clickedCellEvent) {
     resultValidation();
 }
 
+// set the game to restart, clear the board and updating the game status
 function restartGame() {
 
+        gameActive = true;
+        currentPlayer = "x";
+        gameState = ["", "", "", "", "", "", "", "", ""];
+        gameStatusDisplay.innerHTML = currentPlayerTurn();
+        document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
 
 // Add event listeners to the game cells and restart button
