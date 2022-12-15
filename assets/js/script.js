@@ -44,5 +44,9 @@ function cellClick() {
 }
 
 function restartGame() {
-    
+
 }
+
+// Add event listeners to the game cells and restart button
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', cellClick));
+document.getElementById('game-restart-btn').addEventListener('click', restartGame);
