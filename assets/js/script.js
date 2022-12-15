@@ -39,8 +39,23 @@ function resultValidation() {
 
 }
 
-function cellClick() {
-
+/**
+ * We need to check if the clicked cell has already been clicked and if it hasnt we need to
+ * continue the game flow from here
+ *  */ 
+function cellClick(clickedCellEvent) {
+    // we save the clicked html element in a variable
+    const clickedCell = clickedCellEvent.target;
+    // we grab the cell index attribute from clicked cell to identifie where it is
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('cell-index'));
+    // check whether the call has already been played or if the game is paused
+    // if either of those is true we will ignore the click
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
+        return;
+    }
+    // if all is in order we will proceed with the game flow
+    cellPlayed(clickedCell, clickedCellIndex);
+    resultValidation();
 }
 
 function restartGame() {
