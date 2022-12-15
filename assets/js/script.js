@@ -80,6 +80,11 @@ function resultValidation() {
 
     if (roundWon) {
         gameStatusDisplay.innerHTML = winMessage();
+        if (currentPlayer === "x") {
+            incrementXscore();
+        } else {
+            incrementOscore();
+        }
         gameActive = false;
         return;
     }
@@ -113,6 +118,20 @@ function cellClick(clickedCellEvent) {
     resultValidation();
 }
 
+
+// gets the scores and increment them by 1
+function incrementXscore() {
+    let xScore = parseInt(document.getElementById('x-score').innerText);
+    document.getElementById('x-score').innerText = ++xScore;
+}
+
+function incrementOscore() {
+    let oScore = parseInt(document.getElementById('o-score').innerText);
+    document.getElementById('o-score').innerText = ++oScore;
+} 
+
+
+
 // set the game to restart, clear the board and updating the game status
 function restartGame() {
 
@@ -122,6 +141,7 @@ function restartGame() {
         gameStatusDisplay.innerHTML = currentPlayerTurn();
         document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
+
 
 // Add event listeners to the game cells and restart button
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', cellClick));
