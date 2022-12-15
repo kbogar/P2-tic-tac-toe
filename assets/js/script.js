@@ -35,7 +35,7 @@ const winningConditions = [
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 5]
+    [2, 4, 6]
 ];
 
 // Set up the structure of game functions
@@ -62,7 +62,7 @@ function playerChange() {
 function resultValidation() {
 
     let roundWon = false;
-    for (let i = 0; i <= 9; i++) {
+    for (let i = 0; i < 8; i++) {
         const winConditions = winningConditions[i];
         let a = gameState[winConditions[0]];
         let b = gameState[winConditions[1]];
