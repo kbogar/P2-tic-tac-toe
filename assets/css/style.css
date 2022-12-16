@@ -131,7 +131,12 @@ footer i {
 /** responsivnes **/
 
 @media screen and (max-width: 710px) {
+    .score-area {
+        margin-top: 0;
+    }
+
     .score-area p {
+        margin: 0;
         padding: 10px 50px;
         display: block;
     }
@@ -142,11 +147,20 @@ footer i {
     .heading {
         font-size: 3rem;
         margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     #cell-container {
         margin: 20px auto;
     
+    }
+
+    .game-status {
+        margin: 10px 0;
+    }
+
+    #game-restart-btn {
+        margin-top: 0;
     }
 
 }
