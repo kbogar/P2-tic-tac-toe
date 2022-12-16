@@ -26,14 +26,18 @@ body {
 }
 
 .toe {
-    color: #A26675;
+    color: #DE8775;
 }
 
 /* game section */
 
 #game-section {
     text-align: center;
-    font-size: 120%;
+    font-size: 100%;
+}
+
+#game-section h2 {
+    font-size: 200%;
 }
 
 #cell-container {
@@ -41,7 +45,6 @@ body {
     grid-template-columns: repeat(3, auto);
     width: 314px;
     margin: 50px auto;
-
 }
 
 .cell {
@@ -80,6 +83,10 @@ body {
     padding: 10px 50px;
 }
 
+#x-score, #o-score {
+    color: #F9F871;
+}
+
 /** footer **/
 
 .footer {
@@ -108,6 +115,17 @@ footer h2 {
 footer i {
     color: #f9f871;
     font-size: 150%;
+}
+/* 404 page */
+
+#error-page {
+    text-align: center;
+    font-size: 150%;
+    color:#F9F871;
+}
+
+#error-page a {
+    color: inherit;
 }
 
 /** responsivnes **/
