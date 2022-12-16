@@ -2,23 +2,38 @@
 
 
 body {
-    background-color: #025091;
+    background-color: #303030;
     font-family: 'Permanent Marker', cursive;
-    color: #71c5ee;
+    color: #de8775;
     margin: 0;
     padding: 0;
     border: none;
+}
+/* header */
+
+.heading {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+.tic {
+    color: #f9f871;
+}
+
+.tac {
+    color: #FFB969;
+}
+
+.toe {
+    color: #A26675;
 }
 
 /* game section */
 
 #game-section {
     text-align: center;
-}
-
-.heading {
-    font-size: 5rem;
-    margin-top: 5rem;
+    font-size: 120%;
 }
 
 #cell-container {
@@ -46,6 +61,11 @@ body {
     height: 50px;
     font-size: 2rem;
     margin-top: 10px;
+    background-color: #F9F871;
+    color: #303030;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: #de8775 0 10px 20px -10px;
 }
 
 /** score area **/
@@ -71,6 +91,10 @@ body {
     position: fixed;
 }
 
+footer h2 {
+    color: #f9f871;
+}
+
 .footer ul {
     list-style: none;
     padding: 0;
@@ -82,7 +106,7 @@ body {
 }
 
 footer i {
-    color: #71c5ee;
+    color: #f9f871;
     font-size: 150%;
 }
 
