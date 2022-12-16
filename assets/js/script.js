@@ -1,12 +1,10 @@
-// Store a game status element to easily use it later 
+// Game status constant 
 const gameStatusDisplay = document.querySelector('.game-status');
 
-// Declare variables that we will use to track the game state
-
-// Use in case of an end scenario to pause the game 
+// Variable that we will use to track the game state
 let gameActive = true;
 
-// To store current player here, to know whos turn it is
+// Variable to store current player, to know whos turn it is
 let currentPlayer = "x";
 
 /**
@@ -38,16 +36,15 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
-// Set up the structure of game functions
-
-//we need to update our internal game state to reflect the played move and UI
+// Structure of game functions
+// We need to update our internal game state to reflect the played move and UI
 function cellPlayed(clickedCell, clickedCellIndex) {
 
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 }
 
-// change the current player and update the game status message
+// Change the current player and update the game status message
 function playerChange() {
 
     currentPlayer = currentPlayer === "x" ? "o" : "x";
@@ -57,7 +54,8 @@ function playerChange() {
 /**
  * we need to loop through winning conditions and check if the game state array under 
  * those indexes match. If they match we move on to declare a winning player 
- * and ending the game. We need also to check if the game ended in draw.
+ * and ending the game. We need also to check if the game ended in draw, and
+ * increment the score.
  */
 function resultValidation() {
 
@@ -88,14 +86,14 @@ function resultValidation() {
         gameActive = false;
         return;
     }
-    // need to check are there any values in game state array that are still not populated
+    // Need to check are there any values in game state array that are still not populated
     let roundDraw = !gameState.includes("");
     if (roundDraw) {
         gameStatusDisplay.innerHTML = drawMessage();
         gameActive = false
         return;
     }
-    // if there are still moves to be played, we continue by changing the current player
+    // If there are still moves to be played, we continue by changing the current player
     playerChange();
 }
 
@@ -118,7 +116,6 @@ function cellClick(clickedCellEvent) {
     resultValidation();
 }
 
-
 // gets the scores and increment them by 1
 function incrementXscore() {
     let xScore = parseInt(document.getElementById('x-score').innerText);
@@ -130,8 +127,6 @@ function incrementOscore() {
     document.getElementById('o-score').innerText = ++oScore;
 } 
 
-
-
 // set the game to restart, clear the board and updating the game status
 function restartGame() {
 
@@ -141,7 +136,6 @@ function restartGame() {
         gameStatusDisplay.innerHTML = currentPlayerTurn();
         document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
-
 
 // Add event listeners to the game cells and restart button
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', cellClick));
