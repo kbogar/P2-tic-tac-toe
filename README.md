@@ -1,5 +1,5 @@
 # Tic Tac Toe
-Tic Tac Toe is a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row.
+Tic Tac Toe is a website, a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row.
 
 You can see the live link [here](https://kbogar.github.io/P2-tic-tac-toe/)
 
@@ -16,7 +16,33 @@ Google Fonts were used as below:
 - Permanent Marker is used for the whole gamesite, because I liked the look of a handwriting style.
 - Cursive is used as a fallback font if the browser not support the first one.
 # Features
+Website consists of home page, what is actually a game page also, and a 404 error page.
 
+## Home Page
+
+### Header
+- This is a title of the home page. It is not clickable since there is just one game page.
+
+![](/docs/header.png)
+### Game Section
+- It contains a 3x3 grid where the players take turns by clicking on it marking X or O in one of the nine spaces.
+- There is a game status message, informing the current players turn, the winner and if the game endend in a draw.
+- A button for restarting a new game.
+- A score tracking system, containing the two players win times.
+
+![](/docs/gamesection.png)
+
+### Footer
+- Containing the follow me social media links.
+
+![](/docs/footer.png)
+
+### 404 Error page
+- This page is made with the same style as the home page. It contains a message apologising to the user that the requested page is not found. It then directs the user to a link back to a home page.
+
+![](/docs/errorpage.png)
+
+### Future Features
 ## Accessibility
 
 # Technologies Used
