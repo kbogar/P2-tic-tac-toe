@@ -2,11 +2,15 @@
 This game is an addictive board game, designed to attract gamers. Tic Tac Toe is a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares.
 The winner is the first player to get three of the same symbols in a row.
 
-View game on Github Pages
+You can see the live link [here](https://kbogar.github.io/P2-tic-tac-toe/)
 
+![](/docs/FireShot%20Capture%20020.png)
 # User Experience (UX)
 ## Initial Discussion
+A Tic Tac Toe board game for two players.
 ### Key information for the site:
+- The game is played on a 3x3 grid by two players
+- 
 ## User Stories
 ### Client Goals
 ### First Time Visitor Goals

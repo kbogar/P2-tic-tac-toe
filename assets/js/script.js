@@ -104,8 +104,8 @@ function resultValidation() {
 function cellClick(clickedCellEvent) {
     // we save the clicked html element in a variable
     const clickedCell = clickedCellEvent.target;
-    // we grab the cell index attribute from clicked cell to identifie where it is
-    const clickedCellIndex = parseInt(clickedCell.getAttribute('cell-index'));
+    // we grab the id attribute from clicked cell to identifie where it is
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('id'));
     // check whether the call has already been played or if the game is paused
     // if either of those is true we will ignore the click
     if (gameState[clickedCellIndex] !== "" || !gameActive) {
