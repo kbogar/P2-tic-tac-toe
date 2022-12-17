@@ -43,20 +43,54 @@ Website consists of home page, what is actually a game page also, and a 404 erro
 ![](/docs/errorpage.png)
 
 ### Future Features
+- I would like to integrate an AI player to the game, so the user can choose with who he would like to play.
+- The ability for user to choose the grid sizes, 3x3 or 5x5.
+- To make the game multiplayer with a server and multiple clients.
 ## Accessibility
+- I confirmed that the colors and fonts chosen are easy to read and accessible by running it through Lighthouse in devtools.
 
+![](/docs/lighthouse.PNG)
 # Technologies Used
 ## Languages Used
+- HTML
+- CSS
+- JavaScript
 ## Frameworks, Libraries & Programs Used
-
+- Devtools - for testing and troubleshooting.
+- [Favicon.cc](https://www.favicon.cc/) - to create favicon icon for the website.
+- Git - for version control. Using GitPod terminal to commit to Git and push to GitHub.
+- GitHub - to save and store the code pushed from Git.
+- [Google Fonts](https://fonts.google.com/) - to import font to apply on the website.
+- [Jigsaw](https://jigsaw.w3.org/css-validator/) - Css validator.
+- [W3C](https://validator.w3.org/#validate_by_uri) - HTML validator.
+- [Jshint](https://jshint.com/) - JavaScript validator.
+- [Fontawesome](https://fontawesome.com/) - to import icons for the website.
+- [Am I responsive](https://ui.dev/amiresponsive) - to show website across a range of devices.
 # Testing
-## Solved Bugs
-## Known Bugs
-## W3C Validator
-## JSHint Validator
-## Lighthouse
-## Manual Testing
+## HTML
+- No errors were found when passing through the official W3C validator.
+### Game Page
 
+![](/docs/html_validator_index.png)
+
+### 404 Error page
+
+![](/docs/html_validator_404.png)
+## CSS
+- No errors were found when passing through the official Jigsaw validator.
+
+![](/docs/css_validator.png)
+## JavaScript
+- No issues with the JavaScript [page](/docs/jshint_validator.png).
+
+## Manual Testing
+- The game website was manually tested on a desktop PC, Acer Laptop, Samsung A53 phone.
+- Tested with Chrome, Microsoft Edge and Firefox.
+
+## Solved Bugs
+- There was an error on index.html/game section/cell container when I was validating it, saying "this Attribute not allowed on element div at this point". I fixed the problem by changing to id attribute. 
+## Known Bugs
+- Not that I know of.
 # Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 - Navigate to the repository in GitHub
@@ -78,6 +112,16 @@ You can see the GitHub repository by clicking here
 
 # Credits
 ## Code
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3 School](https://www.w3schools.com/) - for general helpful tips for JS and CSS.
+- The project Love Maths - to implement score counter in JS was helpful.
+- Code Institute Sample Readme - for Readme layout.
+- [Dev.to](https://dev.to/javascriptacademy/create-a-simple-tic-tac-toe-game-using-html-css-javascript-i4k) - helped me a lot to understand the logic for this game and some code adapted for functions in JS.
+- Thank you for these online tutorials from [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) and [Free Code Camp](https://www.youtube.com/watch?v=P2TcQ3h0ipQ&t=1182s).
 ## Content
+- All content was written by the developer Krisztian Bogar.
 ## Media
+- The favicon icon is made with [favicon.cc](https://www.favicon.cc/) generator.
 ## Acknowledgements
+- Thank you to anyone taking a time and view my second project/first ever webgame.
+- [Spencer Barriball](https://www.linkedin.com/in/spencerbarriball/), my mentor for great guidance and advice.
+- My wife, a huge thank you! She always supported me no matter what and helped me throughout this project.
