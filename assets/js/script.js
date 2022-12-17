@@ -72,7 +72,7 @@ function resultValidation() {
 
         if (a === b && b === c) {
             roundWon = true;
-            break
+            break;
         }
     }
 
@@ -90,7 +90,7 @@ function resultValidation() {
     let roundDraw = !gameState.includes("");
     if (roundDraw) {
         gameStatusDisplay.innerHTML = drawMessage();
-        gameActive = false
+        gameActive = false;
         return;
     }
     // If there are still moves to be played, we continue by changing the current player
