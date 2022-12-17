@@ -1,28 +1,20 @@
 # Tic Tac Toe
-This game is an addictive board game, designed to attract gamers. Tic Tac Toe is a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares.
-The winner is the first player to get three of the same symbols in a row.
+Tic Tac Toe is a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row.
 
 You can see the live link [here](https://kbogar.github.io/P2-tic-tac-toe/)
 
 ![](/docs/FireShot%20Capture%20020.png)
-# User Experience (UX)
-## Initial Discussion
-A Tic Tac Toe board game for two players.
-### Key information for the site:
-- The game is played on a 3x3 grid by two players
-- 
-## User Stories
-### Client Goals
-### First Time Visitor Goals
-### Returning Visitor Goals
-### Frequent Visitor Goals
-
+# Target Audience
+This game is an addictive board game, designed to attract people who find board games interesting and fun. This makes the target demographic pretty broad.
 # Design
 ## Color Scheme
-## Typography
-## Imagery
-## Wireframes
+This was obtained from [MyColor](https://mycolor.space/) website. 
 
+![](/docs/FireShot%20Capture%20021%20-%20mycolor.space.png)
+## Typography
+Google Fonts were used as below:
+- Permanent Marker is used for the whole gamesite, because I liked the look of a handwriting style.
+- Cursive is used as a fallback font if the browser not support the first one.
 # Features
 
 ## Accessibility
