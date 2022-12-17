@@ -1,4 +1,6 @@
 # Tic Tac Toe
+This game is an addictive board game, designed to attract gamers. Tic Tac Toe is a game in which two players take turns in drawing either an X or an O in one square of a grid consisting of nine squares.
+The winner is the first player to get three of the same symbols in a row.
 
 View game on Github Pages
 
