@@ -49,7 +49,7 @@ Website consists of home page, what is actually a game page also, and a 404 erro
 ## Accessibility
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through Lighthouse in devtools.
 
-![](/docs/lighthouse.PNG)
+![](/docs/lighthousetest.PNG)
 # Technologies Used
 ## Languages Used
 - HTML
