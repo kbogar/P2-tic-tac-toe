@@ -100,7 +100,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - Select the main branch
 - After the pages reload, the link to the deployed page will show up at the top.
 
-You can see the GitHub repository by clicking here
+You can see the GitHub repository by clicking [here](https://github.com/kbogar/P2-tic-tac-toe)
 
 ## How to Clone
 - Log in to GitHub and go to the repository
