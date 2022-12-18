@@ -3,7 +3,7 @@ Tic Tac Toe is a website, a game in which two players take turns in drawing eith
 
 You can see the live link [here](https://kbogar.github.io/P2-tic-tac-toe/)
 
-![](/docs/FireShot%20Capture%20020.png)
+![](/docs/Mockupresponsive.png)
 # Target Audience
 This game is an addictive board game, designed to attract people who find board games interesting and fun. This makes the target demographic pretty broad.
 # Design
@@ -31,7 +31,10 @@ Website consists of home page, what is actually a game page also, and a 404 erro
 - A score tracking system, containing the two players win times.
 
 ![](/docs/gamesection.png)
+### Rules section
+- It contains the rules of the game.
 
+![](/docs/rules.png)
 ### Footer
 - Containing the follow me social media links.
 
@@ -49,7 +52,7 @@ Website consists of home page, what is actually a game page also, and a 404 erro
 ## Accessibility
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through Lighthouse in devtools.
 
-![](/docs/lighthousetest.PNG)
+![](/docs/lighthouse_test.PNG)
 # Technologies Used
 ## Languages Used
 - HTML

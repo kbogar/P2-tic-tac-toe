@@ -86,6 +86,13 @@ body {
 #x-score, #o-score {
     color: #F9F871;
 }
+/* rules area */
+
+.rules {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 10px;
+}
 
 /** footer **/
 
